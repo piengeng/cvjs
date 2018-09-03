@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "cv-js.d",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-synacor": "^3.0.3",
+    "if-env": "^1.0.4",
+    "node-sass": "^4.9.3",
+    "preact-cli": "^2.2.1",
+    "sass-loader": "^7.1.0"
+  },
+  "dependencies": {
+    "preact": "^8.3.1",
+    "preact-compat": "^3.18.4",
+    "preact-markup": "^1.6.0"
+  }
+}

@@ -1,0 +1,18 @@
+.section > h1 {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section > div,
+ul {
+  font-family: "Slabo 27px";
+  font-size: 1.2rem;
+  // background-color: gold;
+}
+
+.section > ul {
+  margin-top: 0;
+}

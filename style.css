@@ -1,0 +1,76 @@
+@import "https://fonts.googleapis.com/css?family=Rancho|Lato:300|Playfair+Display:400|Slabo+27px";
+/*
+@import "https://fonts.googleapis.com/css?family=Rancho|Playfair+Display:400,400italic,700|Lato:300|Droid+Serif";
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: skyblue; */
+}
+aside {
+  /* background-color: blueviolet; */
+}
+
+body > div {
+  height: 100%;
+}
+
+/* default*/
+a {
+  font-style: normal;
+  color: #0049d9;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  font-style: normal;
+  color: #0049d9;
+  text-decoration: underline;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1rem minmax(auto, 768px) 1rem;
+  justify-content: center;
+}
+
+.fontContact {
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.fontFullName {
+  font-family: "Rancho", Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+.blurry {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: -1px;
+}
+
+hr.simple {
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+}
